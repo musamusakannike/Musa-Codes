@@ -1,0 +1,164 @@
+#root,
+body,
+html {
+  width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: linear-gradient(45deg, rgb(115, 23, 151), rgb(27, 10, 57));
+}
+/* src/custom-bootstrap.css */
+
+/* purple Color */
+:root {
+  --purple-color: rgb(115, 23, 151);
+  --blue-color: rgb(27, 10, 57);
+  --purple-text-color: #fff;
+  --blue-text-color: #fff;
+  --purple-border-color: rgb(115, 23, 151);
+  --blue-border-color: rgb(27, 10, 57);
+  --purple-hover-color: rgba(115, 23, 151, 0.8);
+  --blue-hover-color: rgba(27, 10, 57, 0.8);
+}
+
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--purple-text-color);
+  background-color: var(--blue-color);
+}
+
+a {
+  color: var(--purple-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--purple-hover-color);
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  font-weight: 400;
+  color: var(--purple-text-color);
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-purple {
+  color: var(--purple-text-color);
+  background: linear-gradient(#e214da, #e7099e);
+  border-color: var(--purple-color);
+  transition: 0.7s linear;
+}
+
+.btn-purple:hover {
+  color: var(--purple-text-color);
+  background-color: var(--purple-hover-color);
+  border-color: var(--purple-hover-color);
+  opacity: .7;
+}
+
+.btn-blue {
+  color: var(--blue-text-color);
+  background-color: var(--blue-color);
+  border-color: var(--blue-color);
+}
+
+.btn-blue:hover {
+  color: var(--blue-text-color);
+  background-color: var(--blue-hover-color);
+  border-color: var(--blue-hover-color);
+}
+
+/* Outline Buttons */
+.btn-outline-purple {
+  color: #fff;
+  background-color: transparent;
+  border-color: var(--purple-color);
+}
+
+.btn-outline-purple:hover {
+  color: #fff;
+  background-color: var(--purple-color);
+  border-color: var(--purple-color);
+}
+
+.btn-outline-blue {
+  color: var(--blue-color);
+  background-color: transparent;
+  border-color: var(--blue-color);
+}
+
+.btn-outline-blue:hover {
+  color: var(--blue-text-color);
+  background-color: var(--blue-color);
+  border-color: var(--blue-color);
+}
+
+/* Text Colors */
+.text-purple {
+  color: var(--purple-color) !important;
+}
+
+.text-blue {
+  color: var(--blue-color) !important;
+}
+
+/* Background Colors */
+.bg-purple {
+  background-color: var(--purple-color) !important;
+  color: var(--purple-text-color) !important;
+}
+
+.bg-blue {
+  background-color: var(--blue-color) !important;
+  color: var(--blue-text-color) !important;
+}
+
+/* Borders */
+.border-purple {
+  border-color: var(--purple-color) !important;
+}
+
+.border-blue {
+  border-color: var(--blue-color) !important;
+}
+
+/* Alerts */
+.alert-purple {
+  color: var(--purple-text-color);
+  background-color: var(--purple-color);
+  border-color: var(--purple-border-color);
+}
+
+.alert-blue {
+  color: var(--blue-text-color);
+  background-color: var(--blue-color);
+  border-color: var(--blue-border-color);
+}
+
+/* Badges */
+.badge-purple {
+  color: var(--purple-text-color);
+  background-color: var(--purple-color);
+}
+
+.badge-blue {
+  color: var(--blue-text-color);
+  background-color: var(--blue-color);
+}
