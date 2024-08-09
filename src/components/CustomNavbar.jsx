@@ -2,10 +2,10 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 
 const CustomNavbar = () => {
   return (
-    <Navbar className='bg-purple text-light' expand="lg" fixed='top'>
+    <Navbar className='text-light' expand="lg">
       <Container>
         <Navbar.Brand href="#home" className='text-light'>Musa_Codes</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler text-light" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
             <Nav.Link className='text-light' href="#about">About</Nav.Link>
