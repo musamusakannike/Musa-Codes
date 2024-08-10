@@ -34,7 +34,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="skills-section" style={styles.skillsSection}>
+    <div id="skills" className="skills-section" style={styles.skillsSection}>
       <h2 className="text-light" data-aos="fade-up">My Skills</h2>
       <div className="container">
         <div className="row justify-content-center">
