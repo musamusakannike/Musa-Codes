@@ -21,13 +21,13 @@ const skills = [
     image: "images/bootstrap.png",
   },
   { name: "React.js", value: 80, color: "#61dafb", image: "images/react.png" },
-  { name: "Next.js", value: 70, color: "#000000", image: "images/next.svg" },
+  { name: "Next.js", value: 70, color: "#f5f5f5", image: "images/next.svg" },
 ];
 
 const Skills = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1200,
+      duration: 800,
       easing: "ease-in-out",
       once: true,
     });
@@ -35,16 +35,15 @@ const Skills = () => {
 
   return (
     <div className="skills-section" style={styles.skillsSection}>
-      <h2 className="text-light">My Skills</h2>
+      <h2 className="text-light" data-aos="fade-up">My Skills</h2>
       <div className="container">
         <div className="row justify-content-center">
           {skills.map((skill, index) => (
             <div
               className="col-12 col-md-6 col-lg-4 mb-4"
               key={index}
-              data-aos="fade-up"
             >
-              <div style={styles.skillItem} className="bg-blue">
+              <div style={styles.skillItem} data-aos="fade-up" className="bg-blue">
                 <div className="skill-icon text-center mb-3">
                   <img
                     src={skill.image}

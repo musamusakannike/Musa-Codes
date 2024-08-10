@@ -14,7 +14,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <Container id="portfolio" fluid className="portfolio-section my-5">
+    <Container id="projects" fluid className="portfolio-section my-5">
       <h2 className="text-center text-white mb-5">My Projects</h2>
       <div className="container mt-5">
         <Row className="g-4 justify-content-center">
